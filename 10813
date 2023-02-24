@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void){
+    int n,m,i,j;
+    int a[100] = {0};
+    int tmp;
+    scanf("%d %d", &n, &m);
+    for(int i =1;i<=n;i++){
+        a[i] = i;
+    }
+    for(int x =1;x<=m; x++){
+        scanf("%d %d", &i, &j);
+        tmp = a[i];
+        a[i] = a[j];
+        a[j] = tmp;
+    }
+    
+    for(int i =1; i<=n;i++)
+        printf("%d ", a[i]);
+    
+    return 0;
+}
