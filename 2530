@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(void){
+    int h,m,s;
+    int ns;
+
+    scanf("%d %d %d", &h, &m, &s);
+    scanf("%d", &ns);
+   
+    printf("%d %d %d", (h+(m+(s+ns)/60)/60)%24, (m+(s+ns)/60)%60, (s+ns)%60);
+    
+    return 0;
+}
