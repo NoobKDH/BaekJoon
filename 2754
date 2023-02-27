@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+int main(void)
+{
+	double a[4]={4,3,2,1};
+	char c[3]={0};
+	double s=0;
+	scanf("%s",c);
+	if (c[0]=='F'){
+		printf("0.0");
+	}
+	else{
+		double s=a[c[0]-'A'];
+		if (c[1]=='+')
+			s+=0.3;
+		if (c[1]=='-')
+			s-=0.3;
+		printf("%2.1f\n",s);
+		
+	}
+	
+}
