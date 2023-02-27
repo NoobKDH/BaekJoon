@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void){
+    char a[100];
+    scanf("%s",a);
+    int n =0;
+    while(a[n] != '\0'){
+        if(a[n]>='A' && a[n]<='Z')
+            a[n] += 'a'-'A';
+        else if(a[n]>='a'&&a[n]<='z')
+            a[n] -= 'a'-'A';
+        printf("%c",a[n]);
+        n++;
+    }
+    return 0;
+    
+}
