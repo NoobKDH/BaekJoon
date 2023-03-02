@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main(void){
+    int n1,x1,n2,x2;
+    
+    scanf("%d %d %d %d",&n1,&x1,&n2, &x2);
+    printf("%d",(n1*x1)+(n2*x2));
+    return 0;
+}
