@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(void){
+    int k,n,m,price=1;
+    scanf("%d %d %d",&k,&n,&m);
+    price = k*n;
+    if(price>m)
+        printf("%d",(k*n)-m);
+    else
+        printf("0");
+    return 0;
+}
