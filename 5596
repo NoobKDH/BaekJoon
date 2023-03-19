@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void){
+    int n[4],m[4];
+    int nsum=0, msum=0;
+    for(int i=0; i<4; i++){
+        scanf("%d",&n[i]);
+        nsum +=n[i];
+    }
+    for(int i=0; i<4; i++){
+        scanf("%d",&m[i]);
+        msum +=m[i];
+    }
+    if(nsum>msum)
+        printf("%d",nsum);
+    else if(nsum == msum)
+        printf("%d", nsum);
+    else
+        printf("%d", msum);
+    return 0;
+    
+}
